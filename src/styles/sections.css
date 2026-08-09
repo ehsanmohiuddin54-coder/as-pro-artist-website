@@ -1,0 +1,324 @@
+/* ----------------------------------- Hero ------------------------------------ */
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-onblack);
+  overflow: hidden;
+}
+.hero__bg {
+  position: absolute; inset: 0;
+  background-size: cover;
+  background-position: center 20%;
+}
+.hero__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(100deg, rgba(11,11,12,0.94) 0%, rgba(11,11,12,0.78) 42%, rgba(11,11,12,0.35) 100%);
+}
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  padding: 40px 24px;
+}
+.hero__eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  font-weight: 600;
+  margin-bottom: 18px;
+  display: inline-block;
+}
+.hero__title {
+  font-size: clamp(2.4rem, 5.4vw, 4rem);
+  color: #fff;
+  margin-bottom: 6px;
+}
+.hero__subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  color: var(--color-gold-light);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.hero__quote {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--color-text-onblack);
+  margin: 18px 0 14px;
+}
+.hero__desc {
+  color: var(--color-text-onblack-muted);
+  font-size: 1.02rem;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+.hero__ctas { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 26px; }
+.hero__location {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--color-text-onblack-muted);
+  border-top: 1px solid rgba(255,255,255,0.14);
+  padding-top: 18px;
+}
+
+@media (max-width: 720px) {
+  .hero { min-height: 88vh; }
+  .hero__bg { background-position: 70% center; }
+}
+
+/* --------------------------------- Welcome/about split --------------------------------- */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.split__media img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+.split__media {
+  position: relative;
+}
+.split__media::before {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  border: 1.5px solid var(--color-gold);
+  border-radius: var(--radius-lg);
+  z-index: -1;
+}
+.split__eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  font-weight: 600;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+.split__title { font-size: clamp(1.7rem, 3vw, 2.3rem); }
+.split ul.check-list { margin-top: 18px; }
+.check-list li {
+  display: flex; align-items: flex-start; gap: 10px;
+  margin-bottom: 12px;
+  color: var(--color-text-dark);
+}
+.check-list li .tick { color: var(--color-gold-dark); flex-shrink: 0; margin-top: 2px; }
+
+@media (max-width: 860px) {
+  .split { grid-template-columns: 1fr; }
+  .split--reverse .split__media { order: -1; }
+}
+
+/* --------------------------------- Service cards --------------------------------- */
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+.service-card__img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+.service-card__body { padding: 22px 24px 26px; }
+.service-card__title { font-size: 1.15rem; margin-bottom: 8px; }
+.service-card__blurb { color: var(--color-text-muted); font-size: 0.92rem; margin-bottom: 14px; }
+.service-card__link {
+  color: var(--color-gold-dark);
+  font-weight: 600;
+  font-size: 0.88rem;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: gap var(--transition-base);
+}
+.service-card__link:hover { gap: 10px; }
+
+/* --------------------------------- Feature (why choose) cards --------------------------------- */
+.feature-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,162,75,0.25);
+  border-radius: var(--radius-md);
+  padding: 30px 22px;
+  text-align: center;
+  transition: transform var(--transition-base), border-color var(--transition-base);
+}
+.feature-card:hover { transform: translateY(-6px); border-color: var(--color-gold); }
+.feature-card__icon {
+  width: 52px; height: 52px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: var(--gradient-gold-soft);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--color-gold-light);
+}
+.feature-card__title { font-size: 1rem; font-family: var(--font-body); font-weight: 600; color: var(--color-text-onblack); margin: 0; }
+
+/* --------------------------------- Bridal / offer banner --------------------------------- */
+.offer-banner {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 420px;
+  box-shadow: var(--shadow-soft);
+}
+.offer-banner__img { background-size: cover; background-position: center; }
+.offer-banner__content {
+  background: var(--gradient-black);
+  color: var(--color-text-onblack);
+  padding: 52px 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.offer-banner__tag {
+  align-self: flex-start;
+  background: var(--gradient-gold);
+  color: var(--color-black);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.offer-banner__title { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 6px; }
+.offer-banner__discount { color: var(--color-gold-light); font-weight: 600; margin-bottom: 14px; }
+.offer-banner__price { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+.offer-banner__price .from { font-size: 2.1rem; font-family: var(--font-heading); color: #fff; }
+.offer-banner__price .prev { text-decoration: line-through; color: var(--color-text-onblack-muted); font-size: 1rem; }
+.offer-banner__note { font-size: 0.85rem; color: var(--color-text-onblack-muted); margin: 14px 0 22px; }
+
+@media (max-width: 820px) {
+  .offer-banner { grid-template-columns: 1fr; }
+  .offer-banner__img { min-height: 220px; }
+}
+
+/* Offer card (grid variant) */
+.offer-card {
+  border-radius: var(--radius-lg);
+  padding: 34px 28px;
+  background: linear-gradient(160deg, var(--color-black) 0%, #23201a 100%);
+  color: var(--color-text-onblack);
+  border: 1px solid rgba(201,162,75,0.3);
+}
+.offer-card__tag {
+  display: inline-block;
+  background: var(--gradient-gold);
+  color: var(--color-black);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* --------------------------------- Testimonials --------------------------------- */
+.testimonial-card {
+  padding: 30px 26px;
+  border-radius: var(--radius-md);
+  background: #fff;
+  border: 1px solid rgba(201,162,75,0.18);
+  box-shadow: var(--shadow-soft);
+}
+.testimonial-card__quote { font-family: var(--font-heading); font-style: italic; font-size: 1.05rem; color: var(--color-text-dark); }
+.testimonial-card__name { margin-top: 16px; font-weight: 600; color: var(--color-gold-dark); font-size: 0.9rem; }
+.testimonial-card--placeholder {
+  text-align: center; color: var(--color-text-muted); font-style: italic;
+  background: var(--color-ivory); border: 1px dashed rgba(201,162,75,0.4);
+}
+
+/* --------------------------------- Opening hours / location --------------------------------- */
+.hours-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,162,75,0.25);
+  border-radius: var(--radius-md);
+  padding: 30px 32px;
+}
+.hours-row {
+  display: flex; justify-content: space-between; padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  color: var(--color-text-onblack);
+}
+.hours-row:last-child { border-bottom: none; }
+.hours-row span:first-child { color: var(--color-text-onblack-muted); }
+
+/* Light variant for use on cream/ivory sections (e.g. Contact page) */
+.hours-card--light {
+  background: #fff;
+  border-color: rgba(201,162,75,0.25);
+  box-shadow: var(--shadow-soft);
+}
+.hours-card--light h3 { color: var(--color-gold-dark) !important; }
+.hours-card--light .hours-row { color: var(--color-text-dark); border-color: rgba(0,0,0,0.08); }
+.hours-card--light .hours-row span:first-child { color: var(--color-text-muted); }
+
+/* --------------------------------- FAQ accordion --------------------------------- */
+.faq-item {
+  border-bottom: 1px solid rgba(201,162,75,0.25);
+}
+.faq-item__question {
+  width: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 4px;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  color: inherit;
+}
+.faq-item__icon { color: var(--color-gold); flex-shrink: 0; margin-left: 16px; transition: transform var(--transition-base); }
+.faq-item__icon--open { transform: rotate(45deg); }
+.faq-item__answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  color: var(--color-text-muted);
+}
+.faq-item__answer--open { max-height: 300px; padding-bottom: 20px; }
+.section--black .faq-item__answer { color: var(--color-text-onblack-muted); }
+
+/* --------------------------------- Final CTA --------------------------------- */
+.final-cta {
+  text-align: center;
+  padding: 90px 24px;
+  background: var(--gradient-black);
+  color: #fff;
+  position: relative;
+}
+.final-cta::before, .final-cta::after {
+  content: "";
+  display: block;
+  width: 70px; height: 2px;
+  background: var(--gradient-gold);
+  margin: 0 auto 22px;
+}
+.final-cta h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); }
+.final-cta p { color: var(--color-text-onblack-muted); max-width: 480px; margin: 0 auto 30px; }
+.final-cta__ctas { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+/* --------------------------------- Instagram/social block --------------------------------- */
+.social-block { text-align: center; }
+.social-block__handles { display: flex; justify-content: center; gap: 40px; margin-top: 26px; flex-wrap: wrap; }
+.social-block__handle { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.social-block__icon {
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--gradient-gold-soft);
+  border: 1px solid rgba(201,162,75,0.4);
+  color: var(--color-gold-light);
+}
