@@ -31,7 +31,7 @@ export const testimonials = [
 export const featuredWork = [
   {
     id: "kubra-london-nahi-jaungi",
-    image: "/public/kubra-khan-styling.jpg",
+    image: "/kubra-khan-styling.jpg",
     alt: "Hair and makeup for actress Kubra Khan, styled for London Nahi Jaungi promotional events",
     title: "Kubra Khan — London Nahi Jaungi Promo",
     detail:
@@ -40,7 +40,7 @@ export const featuredWork = [
   },
   {
     id: "london-promo-tour",
-    image: "/public/london-nahi-jaungi-promo.jpg",
+    image: "/london-nahi-jaungi-promo.jpg",
     alt: "Cast of London Nahi Jaungi on their London promotional tour",
     title: "London Promo Tour",
     detail: "Working with the cast across the film's London press appearances.",
