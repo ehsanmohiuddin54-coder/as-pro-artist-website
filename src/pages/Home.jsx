@@ -160,7 +160,7 @@ const Home = () => {
               <p>I'm the face behind AS.PRO ARTIST — Hair &amp; Beauty Salon.</p>
               <p>
                 With 15+ years of experience, I've trained with Lubna Rafiq, Naeem Khan, P. Louise
-                and MAC, and worked with Asiana Magazine. Before opening AS.PRO ARTIST, I spent 8
+                and MAC, and worked with Asiana Magazine. Before opening AS.PRO ARTIST, I spent 15+
                 years at Parveen's Salon in Alum Rock, honing my craft and caring for clients
                 across hair, beauty and bridal artistry.
               </p>

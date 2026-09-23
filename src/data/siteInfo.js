@@ -4,7 +4,7 @@ export const siteInfo = {
   tagline: "Hair & Beauty Salon",
   slogan: "Your Beauty, Our Artistry.",
   founder: "Nadiya",
-  experienceYears: "8+",
+  experienceYears: "15+",
   address: "443 Stratford Rd, Birmingham B11 4LB",
   addressShort: "Birmingham, UK",
   phoneDisplay: "+44 7448 638746",
@@ -38,8 +38,8 @@ export const callLink = () => `tel:${siteInfo.phoneDial}`;
 
 export const brandStory = {
   paragraphs: [
-    "Nadiya is the founder and lead artist behind AS.PRO ARTIST. With over 8 years of professional experience in the beauty industry, she has trained with renowned names including Lubna Rafiq, Naeem Khan, P. Louise and MAC, and has worked with Asiana Magazine.",
-    "She spent 8 years at Parveen's Salon in Alum Rock before opening her own salon.",
+    "Nadiya is the founder and lead artist behind AS.PRO ARTIST. With over 15+ years of professional experience in the beauty industry, she has trained with renowned names including Lubna Rafiq, Naeem Khan, P. Louise and MAC, and has worked with Asiana Magazine.",
+    "She spent 15+ years at Parveen's Salon in Alum Rock before opening her own salon.",
     "AS.PRO ARTIST represents her passion for hair, makeup, skincare and bridal artistry. Her goal is to provide professional, skilled, caring and personal beauty services while using premium, organic and herbal treatments where appropriate.",
   ],
   trainedWith: ["Lubna Rafiq", "Naeem Khan", "P. Louise", "MAC"],
@@ -48,7 +48,7 @@ export const brandStory = {
 };
 
 export const whyChooseUs = [
-  { title: "8+ Years Experience", icon: "sparkle" },
+  { title: "15+ Years Experience", icon: "sparkle" },
   { title: "Trained with Industry Experts", icon: "medal" },
   { title: "Ex-Asiana Magazine Artist", icon: "camera" },
   { title: "24 Specialised Facial Treatments", icon: "leaf" },
@@ -79,7 +79,7 @@ export const currentOffers = [
   {
     id: "bridal-special",
     title: "Bridal Makeup Special",
-    description: "20% OFF + FREE Facial",
+    description: "30% OFF + FREE Facial",
     fromPrice: "£450",
     previousPrice: "£562.50",
     active: true,
