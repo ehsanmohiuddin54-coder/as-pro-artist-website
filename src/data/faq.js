@@ -22,6 +22,6 @@ export const faqs = [
   },
   {
     question: "What are your opening hours?",
-    answer: "Monday–Saturday: 10 AM–6 PM. Sunday: 11 AM–5 PM.",
+    answer: "Monday–Friday: 09:30 AM–6 PM. Saturday-Sunday: 10 AM–6 PM.",
   },
 ];

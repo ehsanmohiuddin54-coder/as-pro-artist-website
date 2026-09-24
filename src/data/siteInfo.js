@@ -20,8 +20,8 @@ export const siteInfo = {
   bridalDepositNote:
     "Bridal bookings require a 50% deposit to secure your date.",
   openingHours: [
-    { days: "Monday – Saturday", hours: "10:00 AM – 6:00 PM" },
-    { days: "Sunday", hours: "11:00 AM – 5:00 PM" },
+    { days: "Monday – Friday", hours: "09:30 AM – 6:00 PM" },
+    { days: "Saturday – Sunday", hours: "10:00 AM – 6:00 PM" },
   ],
   whatsappMessages: {
     general:
@@ -39,7 +39,7 @@ export const callLink = () => `tel:${siteInfo.phoneDial}`;
 export const brandStory = {
   paragraphs: [
     "Nadiya is the founder and lead artist behind AS.PRO ARTIST. With over 15+ years of professional experience in the beauty industry, she has trained with renowned names including Lubna Rafiq, Naeem Khan, P. Louise and MAC, and has worked with Asiana Magazine.",
-    "She spent 15+ years at Parveen's Salon in Alum Rock before opening her own salon.",
+    "She spent 8+ years at Parveen's Salon in Alum Rock before opening her own salon.",
     "AS.PRO ARTIST represents her passion for hair, makeup, skincare and bridal artistry. Her goal is to provide professional, skilled, caring and personal beauty services while using premium, organic and herbal treatments where appropriate.",
   ],
   trainedWith: ["Lubna Rafiq", "Naeem Khan", "P. Louise", "MAC"],
